@@ -106,4 +106,4 @@ When a booking successfully completes, `resetFlightStore()` is invoked. This imm
 
 ## ⚡ Lighthouse Performance & PWA Score
 
-![Lighthouse Score](/lighthouse.png)
+![Lighthouse Score](public/lighthouse.png)
