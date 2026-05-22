@@ -1,5 +1,7 @@
 # AeroLux: Premium Flight Booking PWA
 
+**Live Production URL:** [https://aerolux-five.vercel.app/](https://aerolux-five.vercel.app/)
+
 AeroLux is a state-of-the-art Progressive Web App (PWA) built with **Next.js 16**, **Zustand**, and **Supabase**. It provides a highly interactive, responsive, and secure flight booking experience featuring real-time seat synchronization and atomic Postgres transactions.
 
 ---
@@ -99,3 +101,9 @@ By explicitly mapping over the passenger array and wiping `passportNo`, we guara
 
 ### Clean Resets
 When a booking successfully completes, `resetFlightStore()` is invoked. This immediately flushes `selectedSeats` and `passengerDetails` from both React state and Local Storage, ensuring that stale session data does not leak into the next transaction.
+
+---
+
+## ⚡ Lighthouse Performance & PWA Score
+
+![Lighthouse Score](/lighthouse.png)
