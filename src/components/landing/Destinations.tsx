@@ -1,5 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import Link from "next/link";
+import Image from "next/image";
 
 interface DestinationDetails {
   city: string;
@@ -141,8 +142,10 @@ export default async function Destinations() {
                   href={getSearchUrl(dest)}
                   className="md:col-span-7 relative group overflow-hidden rounded-xl bg-surface-container block cursor-pointer min-h-[300px] md:min-h-0"
                 >
-                  <img
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 absolute inset-0"
+                  <Image
+                    fill
+                    sizes="(max-width: 768px) 100vw, 60vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                     alt={`A beautiful shot of ${details.city}`}
                     src={details.image}
                   />
@@ -175,8 +178,10 @@ export default async function Destinations() {
                     href={getSearchUrl(dest)}
                     className="relative group overflow-hidden rounded-xl bg-surface-container block cursor-pointer"
                   >
-                    <img
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 absolute inset-0"
+                    <Image
+                      fill
+                      sizes="(max-width: 768px) 100vw, 40vw"
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
                       alt={`A beautiful shot of ${details.city}`}
                       src={details.image}
                     />
@@ -212,8 +217,10 @@ export default async function Destinations() {
                     href={getSearchUrl(dest)}
                     className="relative group overflow-hidden rounded-xl bg-surface-container block cursor-pointer aspect-4/3 min-h-[220px]"
                   >
-                    <img
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 absolute inset-0"
+                    <Image
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 20vw"
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
                       alt={`A beautiful shot of ${details.city}`}
                       src={details.image}
                     />
@@ -249,8 +256,10 @@ export default async function Destinations() {
                 href={getSearchUrl(dest)}
                 className="relative group overflow-hidden rounded-xl bg-surface-container block cursor-pointer aspect-[16/10] min-h-[250px]"
               >
-                <img
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 absolute inset-0"
+                <Image
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                   alt={`A beautiful shot of ${details.city}`}
                   src={details.image}
                 />

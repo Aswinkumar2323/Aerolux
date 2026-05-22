@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 interface NavbarProps {
   user: {
@@ -55,9 +56,11 @@ export default function NavbarClient({ user }: NavbarProps) {
                 <span className="font-label-sm text-label-sm text-on-surface group-hover:text-secondary transition-colors duration-200">
                   {user.displayName}
                 </span>
-                <img
+                <Image
+                  width={32}
+                  height={32}
                   alt="User profile avatar"
-                  className="w-8 h-8 rounded-full bg-surface-variant ring-1 ring-secondary/20 group-hover:ring-secondary transition-all duration-200"
+                  className="rounded-full bg-surface-variant ring-1 ring-secondary/20 group-hover:ring-secondary transition-all duration-200"
                   src={user.avatarUrl}
                 />
               </Link>
@@ -116,9 +119,11 @@ export default function NavbarClient({ user }: NavbarProps) {
                 onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center gap-3 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-variant/30 hover:text-on-surface transition-all font-label-sm text-label-sm"
               >
-                <img
+                <Image
+                  width={24}
+                  height={24}
                   alt="User profile avatar"
-                  className="w-6 h-6 rounded-full bg-surface-variant ring-1 ring-secondary/20"
+                  className="rounded-full bg-surface-variant ring-1 ring-secondary/20"
                   src={user.avatarUrl}
                 />
                 <span>{user.displayName}</span>

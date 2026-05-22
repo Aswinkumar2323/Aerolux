@@ -76,23 +76,29 @@ export default function Footer() {
           </span>
           <div className="flex gap-6">
             <Link href="#" className="text-on-surface-variant hover:text-secondary transition-colors">
-              <img
+              <Image
+                width={20}
+                height={20}
                 alt="X"
-                className="w-5 h-5 opacity-70"
+                className="opacity-70"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoQb9JJu7aacV2TA8gkVdcF3NF-czkGrwJz-lZjl7ntSdH5-rCfwH2qj-DC9PGWnyn-1m5hcIWKo3M9fwEPj-Yg-WljtDfdbMZsCI_PFfccog1Y0kb4KQ_IDtZcgmozW4dyO78iM4VIgkWmCFzCQI1ymDmfJ_wGMc327KRiQHZmrMxAp2J_mGZzAtGvNgK7nBt3ajqHTKzSult7S5HVd7sWfvEoLHy0CBfM4TNjiyQTWLdbD7t7oZG8t5PoApxYqCvmDE3WbNHjLc"
               />
             </Link>
             <Link href="#" className="text-on-surface-variant hover:text-secondary transition-colors">
-              <img
+              <Image
+                width={20}
+                height={20}
                 alt="LinkedIn"
-                className="w-5 h-5 opacity-70"
+                className="opacity-70"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsrVOH4C1NXgaTqMV2PrzPak416CYHtnaQh5dytk9KE_faP9k9CzonP2ahM-Gt4_KfUTR29S_NYFuVg4CuucOyu__5pQjkyeSR1UBco0EY3v6Ct73NEMgH5hTa3d1SsK92W4nuBKbA7wzdtQIOTQk9_7DVOmxbeaVTrsTL3R0qLEbjQCaiD0EiZ6VY6R1Sgh2KWkuOSwY15lJ-wTAD24_TP1ypQDVIZQGNjcliIeuoV2iNjch-T7fmwNDLfGGEFdSqt6GcLTY3Hk8"
               />
             </Link>
             <Link href="#" className="text-on-surface-variant hover:text-secondary transition-colors">
-              <img
+              <Image
+                width={20}
+                height={20}
                 alt="Instagram"
-                className="w-5 h-5 opacity-70"
+                className="opacity-70"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDtWTTFt0wBMxESCjo_Kc91Vb0zikdh8DeRRTQH5O7Jlk8uQwSRukVCZ9DM1kqnstnJ4K-vOcXo2MUuRIgzqJrLdy4UU6006AnL8tM8K57k-GG2xTB58nVuo4ycFCElUY9mfMwG8QpKURM5qTfxlArrn3hoMQsa2QEQBkk1RS1ASISLzTDZvDoiB9n4N_D5ljJ69pRP9J5o3CopfQfdHbYLaZowZSz1E_lwiIxAa9ymnQxWs1wORjJtriqgCRtFS3zJrwSz9mpa98"
               />
             </Link>

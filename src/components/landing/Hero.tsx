@@ -3,6 +3,7 @@
 import { useState, useEffect, FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import { useFlightStore } from "@/store/useFlightStore";
+import Image from "next/image";
 
 export default function Hero() {
   const router = useRouter();
@@ -63,8 +64,11 @@ export default function Hero() {
     <section className="relative h-[870px] min-h-[600px] flex items-start pt-8 md:pt-16 justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-linear-to-b from-surface/20 via-surface/40 to-surface z-10"></div>
-        <img
-          className="w-full h-full object-cover"
+        <Image
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
           style={{ transform: `scale(1.1) translate(${mousePos.x}px, ${mousePos.y}px)` }}
           alt="A cinematic, low-angle wide shot of a sleek modern jet airliner"
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYqWatZbwS8_jxAZEb8oKeKHB4gterCOmYrbJ3cu_ITgnHi03qXc-mw84HHYPp9yXnzeXqwPpJ46-_GODY9g6Bcz6sCPnSDOYNawkcl4wZN0CGOIEndfx-Xa2lJXhZ_o45O-Qied0fmSipGjlmzIgVt9kpkBwD_Fm2RJMWlvn53KFnHR5Nue9-jxRAo1QAjuACQKoJZbECmlf4Kvt0yBI2v-VjLT_4KV-Nx2dXLDxUAvya4ebaRBA4CBavnbXTS7tRd5nhNIntQPY"
